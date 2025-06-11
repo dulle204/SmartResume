@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartResume.API", "SmartResume.API\SmartResume.API.csproj", "{19A294E8-5844-47EA-9222-4FB7BAF1F006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartResume.API", "SmartResume.API\SmartResume.API.csproj", "{4654B6DA-1CCB-453B-AD4C-414E0FD89E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartResume.Application", "SmartResume.Application\SmartResume.Application.csproj", "{983495B0-3C64-4A75-9184-4E1DB072DA9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19A294E8-5844-47EA-9222-4FB7BAF1F006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19A294E8-5844-47EA-9222-4FB7BAF1F006}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19A294E8-5844-47EA-9222-4FB7BAF1F006}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19A294E8-5844-47EA-9222-4FB7BAF1F006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4654B6DA-1CCB-453B-AD4C-414E0FD89E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4654B6DA-1CCB-453B-AD4C-414E0FD89E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4654B6DA-1CCB-453B-AD4C-414E0FD89E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4654B6DA-1CCB-453B-AD4C-414E0FD89E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983495B0-3C64-4A75-9184-4E1DB072DA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983495B0-3C64-4A75-9184-4E1DB072DA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983495B0-3C64-4A75-9184-4E1DB072DA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983495B0-3C64-4A75-9184-4E1DB072DA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

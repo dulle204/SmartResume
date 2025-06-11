@@ -1,0 +1,6 @@
+@SmartResume.API_HostAddress = http://localhost:5280
+
+GET {{SmartResume.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
