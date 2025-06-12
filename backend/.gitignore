@@ -3,3 +3,27 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+# Rider specific files
+.idea/
+# Rider user-specific files
+.idea/.idea.Rider.xml
+# Rider workspace file
+.idea/workspace.xml
+# Rider project settings
+.idea/modules.xml
+# Rider solution settings
+.idea/solution.xml
+# Rider caches
+.idea/caches/
+# Rider local history
+.idea/libraries/
+# Rider run configurations
+.idea/runConfigurations/
+# Rider inspection profiles
+.idea/inspectionProfiles/
+# Rider code style settings
+.idea/codeStyles/
+# Rider VCS settings
+.idea/vcs.xml
+# Rider shared settings     
