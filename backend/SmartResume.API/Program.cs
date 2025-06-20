@@ -1,3 +1,4 @@
+using Microsoft.Extensions.AI;
 using SmartResume.Application.Analyze;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11434"), "llama3"));    
 
 builder.Services.AddTransient<IAnalyzeService, AnalyzeService>();
 

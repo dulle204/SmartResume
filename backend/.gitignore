@@ -3,7 +3,7 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
-
+ollama_data
 # Rider specific files
 .idea/
 # Rider user-specific files

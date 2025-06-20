@@ -1,15 +1,24 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Text.Json;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.AI;
 
 namespace SmartResume.Application.Analyze;
 
-public class AnalyzeService : IAnalyzeService
+public class AnalyzeService(IChatClient chatClient) : IAnalyzeService
 {
     public async Task<string> AnalyzeCvAsync(IFormFile file)
     {
-        // Simulate AI analysis of the CV text
-        await Task.Delay(1000); // Simulating a delay for the AI processing
         using var stream = file.OpenReadStream();
-        // For demonstration, we just return the text length as a simple analysis result
-        return $"CV Analysis Result: {stream.Length} bytes.";
+        using var reader = new StreamReader(stream);
+        var content = await reader.ReadToEndAsync();
+        ChatOptions chatOptions = new ChatOptions()
+        {
+            ResponseFormat = ChatResponseFormat.Json,
+            Temperature = 0f,
+            MaxOutputTokens = 128
+        };
+        var chatCompletion = await chatClient.GetResponseAsync($"analyze cv:  {content}", chatOptions);
+        
+        return $"CV Analysis Result: {chatCompletion.Text}";
     }
 }
